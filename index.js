@@ -10,7 +10,7 @@ const mongoString=process.env.DATABASE_URL
 const PORT = 3333
 const app = express()
 
-await mongoose.connect(mongoString)
+mongoose.connect(mongoString)
 .then(
     conn=>{
         database = conn.connection
