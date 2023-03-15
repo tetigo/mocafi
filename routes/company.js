@@ -6,5 +6,6 @@ const router = express.Router()
 
 router.post('/', companyController.getBalance)
 
+router.get('/', (req,res)=>{return res.json({"OK":"OKOKOK"})})
 
 module.exports=router
