@@ -5,7 +5,12 @@
 ##### The frontend was deployed at: https://app.netlify.com
 ##### The database lives in: https://mongodb.com
 
+##### GitHub Backend: https://github.com/tetigo/mocafi.git
+##### GitHub Frontend: https://github.com/tetigo/mocafront.git
+
 ##### Link to the backend online: https://mocafi-tetigo.vercel.app/api/company
+##### Link to the frontend online: https://startling-entremet-e7313f.netlify.app/
+
 
 This project still needs a lot of modification that I can explain in the interview like:
 
@@ -14,6 +19,38 @@ This project still needs a lot of modification that I can explain in the intervi
 * Making tests
 * The architecture can be discussed later on
 * Get the project inside a container
+* Create the others endpoints
+* Receive the cardNumber and pin hidden as in the example
+* etc
+
+I got the pdf with the page 2 with error, so I got just 2 examples of data that can be used to get the balance:
+```{
+  _id: new ObjectId(),
+  user:{
+    firstName: 'James',
+    lastName: 'Smith',
+    phone: '3129891233'
+  },
+  account: {
+    cardNumber: '5141576321679082',
+    pin:'1234',
+    balance: 112.38
+  }
+},
+{
+  _id: new ObjectId(),
+  user:{
+    firstName: 'Paula',
+    lastName: 'Bean',
+    phone: '3176541213'
+  },
+  account: {
+    cardNumber: '5141776321679088',
+    pin:'4321',
+    balance: 62.78
+  }
+}
+```
 
 Thank you very much for your time!
 
