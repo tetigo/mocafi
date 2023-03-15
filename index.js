@@ -7,6 +7,8 @@ const routes = require('./routes')
 
 const mongoString=process.env.MONGODB_URI
 
+console.log('@@@', mongoString)
+
 const PORT = 3333
 const app = express()
 app.use(express.json())
@@ -17,7 +19,8 @@ app.listen(PORT,()=>{
     console.log(`Server started at: ${PORT}`)
 })
 
-mongoose.connect(mongoString)
+mongoose.connect(mongoString).then(conn=>database=conn.connection)
+
 
 mongoose.connection.on('error',(error)=>{console.log(error)})
 mongoose.connection.once('connected',()=>{console.log('database connected')})
