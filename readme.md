@@ -4,7 +4,8 @@
 ##### The backend was deployed at: https://vercel.com
 ##### The frontend was deployed at: https://app.netlify.com
 ##### The database lives in: https://mongodb.com
-##### Link to the online project: 
+
+##### Link to the backend online: https://mocafi-tetigo.vercel.app/api/company
 
 This project still needs a lot of modification that I can explain in the interview like:
 
