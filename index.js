@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 
 const routes = require('./routes')
 
-const mongoString=process.env.DATABASE_URL
+const mongoString=process.env.MONGODB_URI
 
 const PORT = 3333
 const app = express()
