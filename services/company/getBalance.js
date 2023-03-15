@@ -9,6 +9,7 @@ class GetBalanceService {
                 'account.cardNumber':cardNumber, 
                 'account.pin':pin
             })
+            console.log('$$$', data.account.balance)
             return data.account.balance
         } catch (error) {
             throw new Error(error.message)
